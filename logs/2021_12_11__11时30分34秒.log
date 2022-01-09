@@ -1,0 +1,1 @@
+2021-12-11 11:30:34,797 - base_log.py[line:31] - ERROR: getÇëÇó³ö´í£¡HTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))

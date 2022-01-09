@@ -1,0 +1,1 @@
+2021-12-11 01:05:15,090 - base_log.py[line:31] - ERROR: post请求出错HTTPConnectionPool(host='127.0.0.1', port=7890): Max retries exceeded with url: http://139.224.2.208:8020/chest_api/get_high_lucky_reward (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)))
