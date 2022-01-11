@@ -1,12 +1,14 @@
 from base.base_log import Log
 from base.base_requests import HttpRequest
+from base.base_doExcel import DoExcel
 import json
 
 
 # 断言封装
 class Assertion:
-    def __init__(self, test_dict, test_excel_data):
+    def __init__(self, test_dict, test_data_path, test_excel_data):
         self.test_dict = test_dict
+        self.test_data_path = test_data_path
         self.test_excel_data = test_excel_data
 
     def is_json(self, my_json):
@@ -23,7 +25,7 @@ class Assertion:
     def send_request(self):
         res = HttpRequest().http_request(url=self.test_dict['url'], method=self.test_dict['method'],
                                          headers=self.test_dict['headers'], data=self.test_dict['param'])
-        self.test_excel_data.write_data(int(self.test_dict['case_id']) + 1, 9, str(self.get_response_body(res)))
+        self.test_data_path.write_data(int(self.test_dict['case_id']) + 1, 9, str(res.text))
         return res
 
     def assert_result(self, res):
@@ -38,4 +40,10 @@ class Assertion:
             Log().warning('预期结果是：{0}；实际请求结果是:{1}'.format(self.test_dict["expected_2"], self.get_response_body(self.send_request())))
             test_result = 'FAIL'
         finally:
-            self.test_excel_data.write_data(self.test_dict['case_id'] + 1, 10, test_result)
+            self.test_data_path.write_data(self.test_dict['case_id'] + 1, 10, test_result)
+
+
+if __name__ == '__main__':
+    data = DoExcel('demo.xlsx', 'webtest')
+    print(data.read_data())
+

@@ -71,7 +71,7 @@ if __name__ == '__main__':
     #                                 'snake_sign': 'QxzFbc6AEwTMeywZjrSP9v1qg8o='
     #                                 })
     b = Request.http_request(method='get', url='https://www.baidu.com')
-    print(b)
+    print(type(b), b.status_code)
 
 
 

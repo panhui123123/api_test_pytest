@@ -8,7 +8,7 @@ from base.base_log import Log
 class DoExcel:
     def __init__(self, file_path, sheet_name):
         # openpyxl只能处理xlsx文件，切记！！！
-        self.filepath = os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + r'\testcases\{}'.format(file_path)
+        self.filepath = os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + r'\testdata\{}'.format(file_path)
         self.sheet_name = sheet_name
 
     # 读取excel内容
@@ -49,6 +49,6 @@ class DoExcel:
 
 
 if __name__ == '__main__':
-    A = DoExcel('222.xlsx', 'webtest')
+    A = DoExcel('demo.xlsx', 'webtest')
     for i in A.read_data():
         print(i)
