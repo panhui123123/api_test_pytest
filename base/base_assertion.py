@@ -25,7 +25,7 @@ class Assertion:
     def send_request(self):
         res = HttpRequest().http_request(url=self.test_dict['url'], method=self.test_dict['method'],
                                          headers=self.test_dict['headers'], data=self.test_dict['param'])
-        self.test_data_path.write_data(int(self.test_dict['case_id']) + 1, 9, str(res.text))
+        self.test_data_path.write_data(int(self.test_dict['case_id']) + 1, 9, str(self.get_response_body(res)))
         return res
 
     def assert_result(self, res):
@@ -46,4 +46,5 @@ class Assertion:
 if __name__ == '__main__':
     data = DoExcel('demo.xlsx', 'webtest')
     print(data.read_data())
+
 

@@ -49,8 +49,7 @@ class HttpRequest:
                 Log().error('post请求出错{}'.format(e))
         return res
 
-    # def get_http_request_response(self, method, url, data=None, headers=None):
-    #     res = self.http_request(method=method, url=url, data=data, headers=headers)
+    # def get_http_request_response(self, res):
     #     # 如果返回的是json串那就返回json串，如果不是那就返回文本
     #     return res.json() if self.is_json(res.text) else res.text
 
@@ -71,7 +70,7 @@ if __name__ == '__main__':
     #                                 'snake_sign': 'QxzFbc6AEwTMeywZjrSP9v1qg8o='
     #                                 })
     b = Request.http_request(method='get', url='https://www.baidu.com')
-    print(type(b), b.status_code)
+    print(Request.get_http_request_response(b))
 
 
 
