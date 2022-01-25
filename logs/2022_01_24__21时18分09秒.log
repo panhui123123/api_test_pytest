@@ -1,0 +1,3 @@
+2022-01-24 21:18:10,171 - base_log.py[line:31] - ERROR: 打开excel报错! Cannot convert {'result': False, 'errorCode': 0, 'errorMsg': 'User Key should contain at least 32 characters.'} to Excel
+2022-01-24 21:18:10,171 - base_log.py[line:31] - ERROR: 执行用例1的时候报错:
+2022-01-24 21:18:10,283 - base_log.py[line:31] - ERROR: 打开excel报错! Cannot convert {'result': False, 'errorCode': 0, 'errorMsg': 'User Key should contain at least 32 characters.'} to Excel

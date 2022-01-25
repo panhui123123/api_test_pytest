@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\wepie\Desktop\dev_timing_api_test\venv"
+VIRTUAL_ENV="C:\Users\wepie\Desktop\timing_api_test\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

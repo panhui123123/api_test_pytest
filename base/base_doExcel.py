@@ -2,6 +2,7 @@
 import openpyxl
 import os
 from base.base_log import Log
+from pprint import pprint
 
 
 # excel操作，简单的读写
@@ -49,6 +50,5 @@ class DoExcel:
 
 
 if __name__ == '__main__':
-    A = DoExcel('demo.xlsx', 'webtest')
-    for i in A.read_data():
-        print(i)
+    A = DoExcel('test_post_feed.xlsx', 'test_post_feed')
+    pprint(A.read_data())

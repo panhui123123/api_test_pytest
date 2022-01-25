@@ -1,7 +1,7 @@
 import pytest
 from base.base_assertion import Assertion
 from base.base_doExcel import DoExcel
-from base.base_requests import HttpRequest
+from pprint import pprint
 
 test_data_path = DoExcel('demo.xlsx', 'webtest')
 test_demo_data = test_data_path.read_data()

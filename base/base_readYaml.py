@@ -16,4 +16,4 @@ class ReadYaml:
 
 if __name__ == '__main__':
     A = ReadYaml()
-    print(A.read_yaml_data('test_userID.yaml')['test_userID'])
+    print(A.read_yaml_data('test_user.yaml')['test_user'])

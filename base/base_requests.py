@@ -39,6 +39,8 @@ class HttpRequest:
         # 如果是post请求，则进行判断，请求头为application/json则直接用json.dumps转化参数data的类型，如果请求头类型不是这个则用
         # MultipartEncoder处理
         elif method.lower() == 'post':
+            headers = eval(headers)
+            data = eval(data)
             try:
                 if headers == {'Content-Type':'application/json'}:
                     res = requests.post(url=url, data=json.dumps(data), headers=headers)
@@ -49,9 +51,9 @@ class HttpRequest:
                 Log().error('post请求出错{}'.format(e))
         return res
 
-    # def get_http_request_response(self, res):
-    #     # 如果返回的是json串那就返回json串，如果不是那就返回文本
-    #     return res.json() if self.is_json(res.text) else res.text
+    def get_http_request_response(self, res):
+        # 如果返回的是json串那就返回json串，如果不是那就返回文本
+        return res.json() if self.is_json(res.text) else res.text
 
 
 if __name__ == '__main__':
