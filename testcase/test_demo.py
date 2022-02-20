@@ -10,7 +10,7 @@ test_demo_data = test_data_path.read_data()
 class TestDemo:
     @pytest.mark.parametrize('test_dict', test_demo_data)
     def test_demo(self, test_dict):
-        my_assertion = Assertion(test_dict, test_data_path, test_demo_data)
+        my_assertion = Assertion(test_dict, test_data_path)
         res = my_assertion.send_request()
         my_assertion.assert_result(res)
 

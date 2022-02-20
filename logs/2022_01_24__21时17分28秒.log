@@ -1,1 +1,0 @@
-2022-01-24 21:17:29,186 - base_log.py[line:31] - ERROR: ´ò¿ªexcel±¨´í! Cannot convert {'result': False, 'errorCode': 0, 'errorMsg': 'User Key should contain at least 32 characters.'} to Excel

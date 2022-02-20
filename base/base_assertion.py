@@ -20,10 +20,9 @@ def get_response_body(text):
 # 断言封装
 class Assertion:
     # 初始化方法，传入测试的数据字典，测试数据的excel对象，测试数据列表
-    def __init__(self, test_dict, test_data_path, test_excel_data):
+    def __init__(self, test_dict, test_data_path):
         self.test_dict = test_dict
         self.test_data_path = test_data_path
-        self.test_excel_data = test_excel_data
 
     def send_request(self):
         # 得到请求结果并写入excel
