@@ -23,8 +23,11 @@ class TestPostFeed:
                 test_dict['param'] = new_param
             # 遍历全局变量的key值，如果在param里面找到了key字符串，则用globals()[key]替换，完成所有的替换
             if globals().keys():
+                # 遍历key值
                 for key in globals().keys():
+                    # 遍历出来需要做处理，因为参数化里面是${key}这种格式
                     key_str = '${' + key + '}'
+                    # 查找替换
                     if test_dict['param'].find(key_str) != -1:
                         new_param = test_dict['param'].replace(key_str, str(globals()[key]))
                         test_dict['param'] = new_param
@@ -32,6 +35,7 @@ class TestPostFeed:
         res = my_assertion.send_request()
         my_assertion.assert_result(res)
 
+        # 如果该字段不为空，则添加到全局变量globals里面
         if test_dict['rely'] is not None:
             rely_list = eval(test_dict['rely'])
             globals()[rely_list[0]] = rely_list[1]
