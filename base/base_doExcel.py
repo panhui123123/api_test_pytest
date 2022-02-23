@@ -33,6 +33,7 @@ class DoExcel:
                 test_dict['expected_2'] = sheet.cell(i, 8).value
                 test_dict['response_body'] = sheet.cell(i, 9).value
                 test_dict['result'] = sheet.cell(i, 10).value
+                test_dict['rely'] = sheet.cell(i, 11).value
                 test_data.append(test_dict)
             return test_data
         except Exception as e:
