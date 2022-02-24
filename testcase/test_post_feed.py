@@ -2,11 +2,13 @@ import pytest
 from base.base_assertion import Assertion
 from base.base_doExcel import DoExcel
 from pprint import pprint
+import allure
 
 test_data_path = DoExcel('test_post_feed.xlsx', 'test_post_feed')
 test_post_feed_data = test_data_path.read_data()
 
 
+@allure.feature('日记测试')
 class TestPostFeed:
     # pytest装饰器，将测试需要用的数据参数化，实现批量测试
     @pytest.mark.parametrize('test_dict', test_post_feed_data)

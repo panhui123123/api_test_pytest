@@ -2,11 +2,13 @@ import pytest
 from base.base_assertion import Assertion
 from base.base_doExcel import DoExcel
 from pprint import pprint
+import allure
 
 test_data_path = DoExcel('demo.xlsx', 'webtest')
 test_demo_data = test_data_path.read_data()
 
 
+@allure.feature('demo测试')
 class TestDemo:
     @pytest.mark.parametrize('test_dict', test_demo_data)
     def test_demo(self, test_dict):
