@@ -35,12 +35,12 @@ class TestPostFeed:
                         test_dict['param'] = new_param
         my_assertion = Assertion(test_dict, test_data_path)
         res = my_assertion.send_request()
-        my_assertion.assert_result(res)
-
-        # 如果该字段不为空，则添加到全局变量globals里面
+        # 如果excel里面rely字段不为空，则添加到全局变量globals里面
         if test_dict['rely'] is not None:
             rely_list = eval(test_dict['rely'])
             globals()[rely_list[0]] = rely_list[1]
+
+        my_assertion.assert_result(res)
 
 
 if __name__ == '__main__':

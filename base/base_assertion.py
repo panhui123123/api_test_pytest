@@ -39,12 +39,10 @@ class Assertion:
             assert eval(self.test_dict['expected_1'])
             assert eval(self.test_dict['expected_2'])
             test_result = 'PASS'
-        except Exception as e:
+        except AssertionError as e:
             # 断言失败则打出log，并fail
             test_result = 'FAIL'
             Log().error('执行用例{0}的时候报错:{1}'.format(self.test_dict["case_id"], e))
-            Log().warning('预期结果是：{0}；实际请求结果是:{1}'.format(self.test_dict["expected_2"], str(get_response_body(
-                                                                                                self.send_request()))))
         finally:
             # 无论断言成功失败都将结果写入excel
             self.test_data_path.write_data(self.test_dict['case_id'] + 1, 10, test_result)

@@ -1,4 +1,0 @@
-2022-02-23 09:52:22,775 - base_log.py[line:31] - ERROR: 打开excel报错! [Errno 13] Permission denied: 'C:\\Users\\wepie\\Desktop\\timing_api_test\\testdata\\test_post_feed.xlsx'
-2022-02-23 09:52:22,785 - base_log.py[line:31] - ERROR: 打开excel报错! [Errno 13] Permission denied: 'C:\\Users\\wepie\\Desktop\\timing_api_test\\testdata\\test_post_feed.xlsx'
-2022-02-23 09:52:22,962 - base_log.py[line:31] - ERROR: 打开excel报错! [Errno 13] Permission denied: 'C:\\Users\\wepie\\Desktop\\timing_api_test\\testdata\\test_post_feed.xlsx'
-2022-02-23 09:52:22,973 - base_log.py[line:31] - ERROR: 打开excel报错! [Errno 13] Permission denied: 'C:\\Users\\wepie\\Desktop\\timing_api_test\\testdata\\test_post_feed.xlsx'
