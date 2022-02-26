@@ -33,7 +33,7 @@ class HttpRequest:
         # 如果method是get请求，这里只用传url就行
         if method.lower() == 'get':
             try:
-                res = requests.get(url=url, params=None)
+                res = requests.get(url=url, params=data)
             except Exception as e:
                 Log().error('get请求出错！{}'.format(e))
         # 如果是post请求，则进行判断，请求头为application/json则直接用json.dumps转化参数data的类型，如果请求头类型不是这个则用
