@@ -44,7 +44,7 @@ class Assertion:
             test_result = 'FAIL'
             Log().error('执行用例{0}的时候报错:{1}'.format(self.test_dict["case_id"], e))
             # 重点敲黑板，这个地方一定一定要raise！一定要raise！一定要raise！曾经没加这句话导致我控制台的AssertionError没有显示，导致我排查
-            # 花了一下午，头发都掉了不少。rais是为了显示的引发异常，一定要加啊
+            # 花了一下午，头发都掉了不少。raise是为了显示的引发异常，一定要加啊
             raise e
         finally:
             # 无论断言成功失败都将结果写入excel
