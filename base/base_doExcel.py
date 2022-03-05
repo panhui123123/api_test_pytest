@@ -9,14 +9,14 @@ from pprint import pprint
 class DoExcel:
     def __init__(self, file_path, sheet_name):
         # openpyxl只能处理xlsx文件，切记！！！
-        self.filepath = os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + r'\testdata\{}'.format(file_path)
+        self.file_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__))) + r'\testdata\{}'.format(file_path)
         self.sheet_name = sheet_name
 
     # 读取excel内容
     def read_data(self):
         # 打开excel表格
         try:
-            workbook = openpyxl.load_workbook(self.filepath)
+            workbook = openpyxl.load_workbook(self.file_path)
             # 获取工作表对象
             sheet = workbook[self.sheet_name]
             test_data = []
@@ -42,10 +42,10 @@ class DoExcel:
     # 写入excel数据,参数为行、列、值
     def write_data(self, row, column, value):
         try:
-            workbook = openpyxl.load_workbook(self.filepath)
+            workbook = openpyxl.load_workbook(self.file_path)
             sheet = workbook[self.sheet_name]
             sheet.cell(row=row, column=column).value = value
-            workbook.save(self.filepath)
+            workbook.save(self.file_path)
         except Exception as e:
             Log().error('打开excel报错! {}'.format(e))
 
