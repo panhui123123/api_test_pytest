@@ -1,0 +1,1 @@
+ERROR    root:base_log.py:31 执行用例2的时候报错:
