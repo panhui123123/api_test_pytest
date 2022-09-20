@@ -1,0 +1,1 @@
+2022-09-20 17:36:25,083 - base_log.py[line:37] - ERROR: Error: Error 11001 connecting to 'localhost':6379. getaddrinfo failed.

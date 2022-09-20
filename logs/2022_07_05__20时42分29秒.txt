@@ -1,0 +1,15 @@
+2022-07-05 20:42:49,807 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:42:49,976 - base_log.py[line:37] - ERROR: 执行用例3的时候报错:
+2022-07-05 20:42:53,325 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:42:53,482 - base_log.py[line:37] - ERROR: 执行用例4的时候报错:
+2022-07-05 20:42:56,752 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:43:00,194 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:43:03,651 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:43:03,829 - base_log.py[line:37] - ERROR: 执行用例7的时候报错:
+2022-07-05 20:43:07,165 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:43:10,598 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:43:10,757 - base_log.py[line:37] - ERROR: 执行用例9的时候报错:
+2022-07-05 20:43:14,259 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:43:14,461 - base_log.py[line:37] - ERROR: 执行用例10的时候报错:
+2022-07-05 20:43:17,721 - base_log.py[line:37] - ERROR: 转换headers、data出错invalid syntax (<string>, line 1)
+2022-07-05 20:43:17,874 - base_log.py[line:37] - ERROR: 执行用例11的时候报错:

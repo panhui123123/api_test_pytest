@@ -1,0 +1,1 @@
+2022-09-20 17:35:35,074 - base_log.py[line:37] - ERROR: Error: invalid literal for int() with base 10: "'6379'"

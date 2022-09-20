@@ -1,0 +1,3 @@
+2022-09-20 17:44:18,201 - base_log.py[line:37] - ERROR: Error: Client sent AUTH, but no password is set
+2022-09-20 17:44:18,201 - base_log.py[line:37] - ERROR: Error: Client sent AUTH, but no password is set
+2022-09-20 17:44:18,202 - base_log.py[line:37] - ERROR: Error: Client sent AUTH, but no password is set
