@@ -1,2 +1,2 @@
 # api_test_pytest
-unittest实现接口自动化
+pytest实现接口自动化
